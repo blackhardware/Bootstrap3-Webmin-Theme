@@ -191,7 +191,8 @@ body {
 	-webkit-transition: all 0.4s ease;
 	height: calc(100% - 51px);
 	margin-top: -20px;
-	overflow: hidden;
+        -webkit-overflow-scrolling: touch;   
+	overflow: scroll;
 }
 .iframe-container.iframe-close {
 	margin-left: 60px;
