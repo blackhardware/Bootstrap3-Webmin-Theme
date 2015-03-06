@@ -144,6 +144,36 @@ if ($level == 0) {
 			&print_table_row($text{'body_cpu'}, &text('body_load', @c));
 		}
 	}
+		# Real memory details
+    &print_table_row(
+        $text{'body_real'},
+        &text(
+            'body_used',
+            nice_size( ( $m[0] ) * 1000 ),
+            nice_size( ( $m[0] - $m[1] ) * 1000 )
+        )
+    );
+
+    # Virtual memory details
+    &print_table_row(
+        $text{'body_virt'},
+        &text(
+            'body_used',
+            nice_size( ( $m[2] ) * 1000 ),
+            nice_size( ( $m[2] - $m[3] ) * 1000 )
+        )
+    );
+
+    # Local disk space
+    &print_table_row(
+        $text{'body_disk'},
+        &text(
+            'body_used_and_free',
+            nice_size( $info->{'disk_total'} ),
+            nice_size( $info->{'disk_free'} ),
+            nice_size( $info->{'disk_total'} - $info->{'disk_free'} )
+        )
+    );
 	# Package updates
 	if ($info->{'poss'}) {
 		@poss = @{$info->{'poss'}};
