@@ -41,6 +41,7 @@ body_cputemps=Temperaturas de la CPU
 body_drivetemps=Temperaturas Drive
 body_driveerr=$1 errores!
 body_drivefailed=SMART check failed!
+body_used_and_free=$1 total / $2 free / $3 used
 
 body_header1=Información de la Cuenta
 body_usermin=Usermin Versión
