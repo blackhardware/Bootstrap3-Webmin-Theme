@@ -53,7 +53,7 @@ print '<p class="navbar-text pull-left">Welcome, ' . $user . '</p>' . "\n";
 &get_miniserv_config(\%miniserv);
 if ($miniserv{'logout'} && !$ENV{'SSL_USER'} && !$ENV{'LOCAL_USER'} && $ENV{'HTTP_USER_AGENT'} !~ /webmin/i) {
 	if ($main::session_id) {
-		print '<a href="'. $gconfig{'webprefix'} . '/session_login.cgi?logout=1" class="btn btn-danger navbar-btn pull-right"><i class="fa fa-sign-out"></i> Logout</a>' . "\n";
+		print '<a href="'. $gconfig{'webprefix'} . '/session_login.cgi?logout=1" class="btn navbar-btn pull-right"><i class="fa fa-sign-out"></i> Logout</a>' . "\n";
 	} else {
 		print '<a href="switch_user.cgi" class="btn btn-danger navbar-btn pull-right"> Switch user</a>' . "\n";
 	}
