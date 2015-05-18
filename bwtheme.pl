@@ -635,7 +635,7 @@ sub theme_ui_submit {
 	$rv .= '<button type="submit" class="btn btn-bwtheme ' . $btntype . '" ';
 	$rv .= ($name ne '' ? 'name="' . &quote_escape($name) . '" ' : '');
 	$rv .= ($name ne '' ? 'id="' . &quote_escape($name) . '" ' : '');
-	$rv .= ' value="' . &quote_escape($label) . '"'.
+	$rv .= ' value="' . &quote_escape($label) . '"';
 	$rv .= ($dis ? ' disabled="disabled"' : '');
 	$rv .= ($tags ? ' ' . $tags : ''). '>';
 	$rv .= $fa . ' ' . &quote_escape($label);
