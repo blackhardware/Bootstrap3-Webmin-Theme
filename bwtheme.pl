@@ -333,7 +333,7 @@ sub theme_ui_columns_row {
 	#$rv .= '<tbody>' . "\n";
 	$rv .= '<tr>' . "\n";
 	for($i=0; $i<@$cols; $i++) {
-		$rv .= '<td>' . "\n";
+		$rv .= '<td ' . $tdtags->[$i] . '>' . "\n";
 		$rv .= ($cols->[$i] !~ /\S/ ? '<br>' : $cols->[$i]);
 		$rv .= '</td>' . "\n";
 	}
