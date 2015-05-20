@@ -316,7 +316,7 @@ sub theme_ui_columns_start {
 	$rv .= '<thead>' . "\n";
 	$rv .= '<tr>' . "\n";
 	for($i=0; $i<@$heads; $i++) {
-		$rv .= '<th>';
+		$rv .= '<th ' . $tdtags->[$i] . '>';
 		$rv .= ($heads->[$i] eq '' ? '<br>' : $heads->[$i]);
 		$rv .= '</th>' . "\n";
 	}
