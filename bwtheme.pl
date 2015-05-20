@@ -350,7 +350,7 @@ sub theme_ui_columns_header {
 	$rv .= '<thead>' . "\n";
 	$rv .= '<tr>' . "\n";
 	for($i=0; $i<@$cols; $i++) {
-		$rv .= '<th>';
+		$rv .= '<th ' . $tdtags->[$i] . '>';
 		$rv .= ($cols->[$i] eq '' ? '#' : $cols->[$i]);
 		$rv .= '</th>' . "\n";
 	}
