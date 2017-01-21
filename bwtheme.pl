@@ -316,7 +316,7 @@ sub theme_ui_columns_start {
 	$rv .= '<thead>' . "\n";
 	$rv .= '<tr>' . "\n";
 	for($i=0; $i<@$heads; $i++) {
-		$rv .= '<th>';
+		$rv .= '<th ' . $tdtags->[$i] . '>';
 		$rv .= ($heads->[$i] eq '' ? '<br>' : $heads->[$i]);
 		$rv .= '</th>' . "\n";
 	}
@@ -333,7 +333,7 @@ sub theme_ui_columns_row {
 	#$rv .= '<tbody>' . "\n";
 	$rv .= '<tr>' . "\n";
 	for($i=0; $i<@$cols; $i++) {
-		$rv .= '<td>' . "\n";
+		$rv .= '<td ' . $tdtags->[$i] . '>' . "\n";
 		$rv .= ($cols->[$i] !~ /\S/ ? '<br>' : $cols->[$i]);
 		$rv .= '</td>' . "\n";
 	}
@@ -350,7 +350,7 @@ sub theme_ui_columns_header {
 	$rv .= '<thead>' . "\n";
 	$rv .= '<tr>' . "\n";
 	for($i=0; $i<@$cols; $i++) {
-		$rv .= '<th>';
+		$rv .= '<th ' . $tdtags->[$i] . '>';
 		$rv .= ($cols->[$i] eq '' ? '#' : $cols->[$i]);
 		$rv .= '</th>' . "\n";
 	}
@@ -635,7 +635,7 @@ sub theme_ui_submit {
 	$rv .= '<button type="submit" class="btn btn-bwtheme ' . $btntype . '" ';
 	$rv .= ($name ne '' ? 'name="' . &quote_escape($name) . '" ' : '');
 	$rv .= ($name ne '' ? 'id="' . &quote_escape($name) . '" ' : '');
-	$rv .= ' value="' . &quote_escape($label) . '"'.
+	$rv .= ' value="' . &quote_escape($label) . '"';
 	$rv .= ($dis ? ' disabled="disabled"' : '');
 	$rv .= ($tags ? ' ' . $tags : ''). '>';
 	$rv .= $fa . ' ' . &quote_escape($label);
