@@ -1,0 +1,64 @@
+left_login=Login: $1
+left_home=System Informationen
+left_oc=Sponsored by OpenCountry
+left_feedback=Feedback
+left_search_webmin=Durchsuche Webmin:
+left_search_usermin=Durchsuche Usermin:
+left_search=Suche:
+left_logs=Zeige Modul Logdateien
+left_others=Weiteres
+
+right_login=Eingeloggt als:
+right_from=Eingeloggt von:
+
+body_header0=System Informationen
+body_host=System Hostname
+body_os=Betriebssystem
+body_webmin=Webmin Version
+body_time=Systemzeit
+body_kernel=Kernel und CPU
+body_cpuinfo=Processorinformationen
+body_cputype=$5, $8 Cores
+body_uptime=Systemlaufzeit (Uptime)
+body_updays=$1 Tag, $2 Stunden, $3 Minuten
+body_uphours=$1 Stunde, $2 Minuten
+body_upmins=$1 Minute
+body_procs=Laufende Prozesse
+body_cpuuse=CPU in Benutzung
+body_cpustats=$1% Benutzer, $2% kernel, $4% IO, $3% idle
+body_real=Reeller Speicher
+body_virt=Virtueller Speicher
+body_used=$1 Gesamt - $2 Benutzt
+body_cpu=CPU Belastungsdurchschnitt
+body_load=$1 (1 min) $2 (5 min) $3 (15 min)
+body_disk=Lokaler Speicherplatz
+body_kernelon=$1 $2 auf $3
+body_updates=Updates
+body_upok=Alles auf dem aktuellstem Stand
+body_upneed=$1 Paket(e) brauchen Updates
+body_upsec=$1 Aktualisierungen sind verfügbar, von denen $2 Sicherheitsupdates sind
+body_cputemps=CPU Temperatur
+body_drivetemps=Laufwerk Temperatur
+body_driveerr=$1 Fehler!
+body_drivefailed=SMART Überprüfung fehlgeschlagen!
+
+body_header1=Account Information
+body_usermin=Usermin Version
+body_out=$1&nbsp;of&nbsp;$2
+body_uquota=Disk Quota
+
+login_danger=Achtung
+login_warning=Warnung
+login_success=Erfolgreich
+login_username=Username
+login_password=Passwort
+login_token=Token
+login_remember=Daten speichern
+login_signin=Login
+
+banner_login=Zum Login
+
+session_failed=Login hat nicht funktioniert, bitte erneut probieren.
+session_twofailed=2-Faktor-Authentifizierung fehlgeschlagen: $1
+session_logout=Logout hat geklappt. Unten kannst du dich erneut einloggen. 
+session_timeout=Die Session ist nicht mehr gültig, da du $1 Minuten inaktiv warst. Bitte erneut einloggen.
